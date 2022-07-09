@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    a(class='btn btn-primary mt-3 mb5 float-right' href='/productos') Listado
+    h1(style='color:blue') Ingrese Datos
+    br
+    form(role='form' method='POST' action='/productos')
+        div.form-group
+        label(for='nombre') Nombre:
+        input#nombre.form-control(type='text', name='nombre')
+        div.form-group
+        label(for='precio') Precio:
+        input#precio.form-control(type='text', name='precio')
+        label(for='url') Foto URL:
+        input#precio.form-control(type='text', name='url')
+        button(class="btn btn-success mt-3 mb5" type="submit", name="asdf") Enviar
+
